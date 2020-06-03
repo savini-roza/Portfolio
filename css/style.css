@@ -1,0 +1,135 @@
+@import url(//db.onlinewebfonts.com/c/4bc98977ba557db3b2f5bb66bff54e25?family=Champagne+&+Limousines);
+
+body {
+	font-family: "Champagne & Limousines" !important;
+	color: #fff !important;
+}
+
+.start {
+	background-image: url("../img/bg1.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+.main-title {
+	font-weight: bold;
+	margin-top: 40vh;
+}
+
+#down {
+	margin-top: 35vh;
+}
+
+
+.main-part {
+	background-color: #000;
+	display: none;
+}
+
+.profile-line {
+	background-color: white;
+	height: 3px;
+	border-radius: 50%;
+}
+
+
+.about {
+	background-image: url("../img/bg2.png"), url("../img/under-bg.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll, fixed;
+	background-size: cover;
+	padding-top: 100px;
+	display: none;
+}
+
+.highlight {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.phrase {
+	font-size: 20px;
+}
+
+.page-title {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.page-paragraph {
+	font-size: 18px;
+}
+
+.p-pic {
+	width: 14%;
+	border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -40px;
+}
+
+.p-pic2 {
+	width: 62%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.divisor {
+	height: 20px;
+	background-color: #7029ab;
+}
+
+.page-card {
+	background-color: #575757 !important;
+	padding: 30px !important;
+	position: absolute;
+    top: -75px;
+}
+
+.board-cell {
+	background-image: linear-gradient(-30deg, #949494, #c0c0c0);
+	width: 200px;
+	height: 200px;
+	box-shadow: 2px 2px 2px #000000;
+}
+
+.img-skills {
+	width: 100px;
+	height: 100px;
+	margin-top: 50px;
+}
+
+.grow { 
+	transition: all .2s ease-in-out;
+}
+.grow:hover {
+	 transform: scale(1.1); 
+}
+
+.fadein {
+	opacity: 0;
+}
+
+.final-pt {
+	display: none;
+	background-color: #000;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	height: 30px;
+}
+
+.footer-text {
+	margin: 0px;
+}
+
