@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="texto-claro">Experiências</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="container-cards">
+        <div class="quadro-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 1 && selecionado != 0, 'expand': selecionado == 1}" (click)="selecionarCard(1)">
+          <h3 *ngIf="selecionado == 1 || selecionado == 0">Skills</h3>
+        </div>
+
+        <div class="quadro-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 2 && selecionado != 0, 'expand': selecionado == 2}" (click)="selecionarCard(2)">
+          <h3 *ngIf="selecionado == 2 || selecionado == 0">Currículo</h3>
+        </div>
+
+        <div class="quadro-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 3 && selecionado != 0, 'expand': selecionado == 3}" (click)="selecionarCard(3)">
+          <h3 *ngIf="selecionado == 3 || selecionado == 0">Palestras</h3>
+        </div>
+
+        <div class="quadro-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 4 && selecionado != 0, 'expand': selecionado == 4}" (click)="selecionarCard(4)">
+          <h3 *ngIf="selecionado == 4 || selecionado == 0">Certificados</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

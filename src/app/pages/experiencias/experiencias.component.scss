@@ -1,0 +1,37 @@
+.container-cards {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.choice {
+  height: 180px;
+  overflow: hidden;
+  transition: width 0.2s;
+  margin: 1%;
+}
+
+.expand {
+  width: 80%;
+}
+
+.unset {
+  width: 40%;
+}
+
+.small {
+  width: 5%;
+}
+
+.small > div {
+  opacity: 0;
+}
+
+.unset > div > p {
+  opacity: 0;
+}
+
+.expand > div {
+  transition-delay: 200ms;
+  opacity: 1;
+}

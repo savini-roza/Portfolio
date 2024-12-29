@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Urbanist';
+  src: url('assets/fonts/Urbanist.ttf') format("truetype");
+}
+
+body {
+  font-family: Urbanist !important;
+  background-color: #331f25 !important;
+}
+
+.texto-claro {
+  color: #f0dfe0 !important;
+}
+
+.texto-escuro {
+  color: #331f25 !important;
+}
+
+.quadro-card {
+  background-color: #653440;
+  color: #f0dfe0;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.grow {
+  position: relative;
+  transition: all 0.4s ease !important;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}

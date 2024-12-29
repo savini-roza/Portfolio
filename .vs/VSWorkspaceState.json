@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\contato",
+    "\\src\\app\\pages\\experiencias",
+    "\\src\\app\\pages\\inicio",
+    "\\src\\app\\pages\\sobre-mim",
+    "\\src\\assets",
+    "\\src\\assets\\fonts"
+  ],
+  "SelectedNode": "\\src\\app\\pages\\contato\\contato.component.html",
+  "PreviewInSolutionExplorer": false
+}
