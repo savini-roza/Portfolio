@@ -5,7 +5,11 @@
 
 body {
   font-family: Urbanist !important;
-  background-color: #331f25 !important;
+  background-color: #0b090a !important;
+}
+
+h2{
+    font-size: 40px !important;
 }
 
 .texto-claro {
@@ -17,10 +21,17 @@ body {
 }
 
 .quadro-card {
-  background-color: #653440;
+  background-image: url('./assets/image/bg-quadro.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6); // Fundo escuro
+  background-blend-mode: darken;
+  z-index: 1;
   color: #f0dfe0;
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #883918;
 }
 
 .grow {
@@ -30,4 +41,8 @@ body {
 
 .grow:hover {
   transform: scale(1.1);
+}
+
+.pt-7 {
+  padding-top: 7rem !important;
 }

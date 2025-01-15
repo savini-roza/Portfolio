@@ -1,0 +1,29 @@
+.justificar p {
+  text-align: justify;
+}
+
+.foto-redonda {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #883918;
+}
+
+.sobre-mim-1 {
+  background-image: url('../../../assets/image/sobre-mim-1.jpg');
+  background-size: cover;
+  background-position: 0 -75px;
+  background-color: rgba(0, 0, 0, 0.4); // Fundo escuro
+  background-blend-mode: darken;
+}
+
+.foto-quadrado-curvo {
+  width: 60%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.sobre-mim-2 {
+  background-image: url('../../../assets/image/sobre-mim-2.jpg');
+  background-size: cover;
+}

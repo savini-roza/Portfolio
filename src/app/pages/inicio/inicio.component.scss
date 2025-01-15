@@ -1,0 +1,33 @@
+.inicio {
+  position: relative;
+  background-image: url('../../../assets/image/bg-inicio.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6); // Fundo escuro
+  background-blend-mode: darken;
+  z-index: 1;
+  box-shadow: 0 0 10rem #883918;
+  height: 100vh;
+
+  .texto-claro {
+    position: relative;
+    z-index: 3;
+  }
+
+  .texto-destaque-1 {
+    font-size: 4.5rem;
+  }
+
+  .texto-destaque-2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+.menu-site.scrolled {
+  background-color: #0b090a;
+  transition: background-color 0.3s ease;
+}
+
+.padding-inicio {
+    padding: 10rem 0 12rem 0;
+}

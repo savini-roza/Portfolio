@@ -1,36 +1,37 @@
-<nav class="navbar navbar-expand-md fixed-top">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link texto-claro" aria-current="page">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link texto-claro">Sobre Mim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link texto-claro">Experiências</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link texto-claro">Contato</a>
-        </li>
-      </ul>
+<div class="inicio" #inicio>
+  <nav class="menu-site navbar navbar-expand-md fixed-top" #menu>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link texto-claro" (click)="scrollToSection('inicio')">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-claro" (click)="scrollToSection('sobre-mim')">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-claro" (click)="scrollToSection('experiencias')">Experiências</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link texto-claro" (click)="scrollToSection('contato')">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-7 texto-claro">
-      <h1>Olá!<br />
-      Eu sou Savini,</h1>
-      <h2>Desenvolvedora Web</h2>
-      <h2>Engenheira de Software</h2>
-      <h2>Entusiasta de Cibersegurança</h2>
-      <h2>Palestrante</h2>
+  <div class="container" id="inicio">
+    <div class="row padding-inicio">
+      <div class="col-12 mt-5 texto-claro">
+        <h1 class="texto-destaque-1">
+          Olá!<br />
+          Eu sou Savini,
+        </h1>
+        <om-typewriter class="texto-destaque-2" [words]="words" [writeSpeed]="30" [deleteDelay]="2500"></om-typewriter>
+      </div>
     </div>
   </div>
 </div>
