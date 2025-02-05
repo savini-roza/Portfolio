@@ -1,17 +1,13 @@
 import { NgClass, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
-import { SkillsComponent } from '../../components/skills/skills.component';
-import { CurriculoComponent } from '../../components/curriculo/curriculo.component';
-import { PalestrasComponent } from '../../components/palestras/palestras.component';
-import { CertificadosComponent } from '../../components/certificados/certificados.component';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-experiencias',
-  imports: [NgClass, NgIf, SkillsComponent, CurriculoComponent, PalestrasComponent, CertificadosComponent],
+  imports: [NgClass, NgIf],
   templateUrl: './experiencias.component.html',
   styleUrl: './experiencias.component.scss'
 })
-export class ExperienciasComponent {
+export class ExperienciasComponent implements AfterViewInit {
   choiceArray = document.querySelectorAll(".choice");
   selecionado: number = 0;
 
@@ -19,7 +15,24 @@ export class ExperienciasComponent {
 
   }
 
-  selecionarCard(num: number) {
-    this.selecionado == num ? this.selecionado = 0 : this.selecionado = num;
+  ngAfterViewInit() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progressBar = entry.target as HTMLElement;
+          const progress = progressBar.getAttribute('data-progress');
+          progressBar.style.width = `${progress}%`;
+          observer.unobserve(progressBar);
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    progressBars.forEach(bar => {
+      observer.observe(bar);
+    });
   }
 }

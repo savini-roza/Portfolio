@@ -1,32 +1,104 @@
 <div class="container pt-7" id="experiencias">
-  <div class="row">
+  <div class="row mb-5">
     <div class="col-12 text-center">
-      <h2 class="texto-claro">Experiências</h2>
+      <h2 class="texto-claro">Skills</h2>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12">
-      <div class="container-cards">
-        <div class="quadro-card skills-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 1 && selecionado != 0, 'expand': selecionado == 1}" (click)="selecionarCard(1)">
-          <h3 *ngIf="selecionado == 1 || selecionado == 0">Skills</h3>
-          <app-skills *ngIf="selecionado == 1"></app-skills>
-        </div>
-
-        <div class="quadro-card curriculo-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 2 && selecionado != 0, 'expand': selecionado == 2}" (click)="selecionarCard(2)">
-          <h3 *ngIf="selecionado == 2 || selecionado == 0">Currículo</h3>
-          <app-curriculo *ngIf="selecionado == 2"></app-curriculo>
-        </div>
-
-        <div class="quadro-card palestras-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 3 && selecionado != 0, 'expand': selecionado == 3}" (click)="selecionarCard(3)">
-          <h3 *ngIf="selecionado == 3 || selecionado == 0">Palestras</h3>
-          <app-palestras *ngIf="selecionado == 3"></app-palestras>
-        </div>
-
-        <div class="quadro-card certificados-card grow choice unset d-inline-block text-center" [ngClass]="{'unset': selecionado == 0, 'small': selecionado != 4 && selecionado != 0, 'expand': selecionado == 4}" (click)="selecionarCard(4)">
-          <h3 *ngIf="selecionado == 4 || selecionado == 0">Certificados</h3>
-          <app-certificados *ngIf="selecionado == 4"></app-certificados>
-        </div>
+  <div class="row m-4">
+    <div class="col-12 col-md-4">
+      <p class="texto-claro">C#</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="90"></div>
       </div>
+      <br />
+      <p class="texto-claro">Angular</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="95"></div>
+      </div>
+      <br />
+      <p class="texto-claro">React</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="70"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Python</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="68"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Ruby On Rails<p>
+        <div class="progress" role="progressbar" aria-valuemax="100">
+          <div class="progress-bar bg-progresso" data-progress="55"></div>
+        </div>
+        <br />
+    </div>
+
+    <div class="col-12 col-md-4">
+      <p class="texto-claro">Computação Forense</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="60"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Nmap</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="40"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Resposta a Incidentes</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="58"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Linux</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="58"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Kibana</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="42"></div>
+      </div>
+      <br />
+    </div>
+
+    <div class="col-12 col-md-4">
+      <p class="texto-claro">Liderança</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="67"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Oratória</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="80"></div>
+      </div>
+      <br />
+      <p class="texto-claro">ISO 27001 / ISO 27002 / NIST</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="68"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Azure DevOps</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="80"></div>
+      </div>
+      <br />
+      <p class="texto-claro">Pensamento Analítico</p>
+      <div class="progress" role="progressbar" aria-valuemax="100">
+        <div class="progress-bar bg-progresso" data-progress="90"></div>
+      </div>
+      <br />
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <div class="row m-4">
+    <div class="col-12 col-md-6 text-end">
+      <button class="btn botao-curriculo my-3">Baixe meu currículo</button>
+    </div>
+    <div class="col-12 col-md-6">
+      <button class="btn botao-curriculo my-3">Baixe meu currículo tunado 😎</button>
     </div>
   </div>
 </div>
