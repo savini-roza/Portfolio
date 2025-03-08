@@ -4,18 +4,33 @@
       <div class="quadro-card">
         <div class="row">
           <div class="col-12">
-            <h2 class="texto-claro mb-5">Entre em contato</h2>
+            <h2 class="texto-claro mb-5">{{idioma == 'pt' ? 'Entre em contato' : 'Get in touch'}}</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <p class="texto-claro">
+            <p class="texto-claro" *ngIf="idioma == 'pt'">
               Se interessou, né? Não seja tímido(a)! Aqui estão minhas redes sociais para você se conectar comigo.
               Vamos trocar ideias, falar sobre tecnologia ou até bater um papo sobre passarinhos e games. Vou adorar conversar com você! 💖
             </p>
+
+            <p class="texto-claro" *ngIf="idioma == 'en'">
+              Got interested, huh? Don't be shy! Here are my social media links so you can connect with me.  
+              Let's exchange ideas, talk about technology, or even chat about birds and games.  
+              I'd love to hear from you! 💖
+            </p>
+
           </div>
-          <div class="col-12 col-md-6">
-              
+          <div class="col-12 col-md-6 px-5">
+              <a class="link-com-icone" href="https://www.linkedin.com/in/cybersavs/" target="_blank"><div class="icone linkedin"></div> Savini (Savs) Roza</a>
+              <br>
+              <a class="link-com-icone" href="https://github.com/savini-roza" target="_blank"><div class="icone github"></div> savini-roza</a>
+              <br>
+              <a class="link-com-icone" href="https://discordapp.com/users/468934065970610176" target="_blank"><div class="icone discord"></div> sarravini</a>
+              <br>
+              <a class="link-com-icone" href="https://www.instagram.com/savs.css/profilecard/?igsh=MWt6a3k2aTNibGc5Yw=="><div class="icone instagram"></div> &#64;savs.css</a>
+              <br>
+              <a class="link-com-icone" href="mailto:savini.roza@outlook.com"><div class="icone email"></div> savini.roza&#64;outlook.com</a>
           </div>
         </div>
       </div>

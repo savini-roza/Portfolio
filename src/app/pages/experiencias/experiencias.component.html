@@ -26,25 +26,25 @@
         <div class="progress-bar bg-progresso" data-progress="68"></div>
       </div>
       <br />
-      <p class="texto-claro">Ruby On Rails<p>
+      <p class="texto-claro">SQL<p>
         <div class="progress" role="progressbar" aria-valuemax="100">
-          <div class="progress-bar bg-progresso" data-progress="55"></div>
+          <div class="progress-bar bg-progresso" data-progress="78"></div>
         </div>
         <br />
     </div>
 
     <div class="col-12 col-md-4">
-      <p class="texto-claro">Computação Forense</p>
+      <p class="texto-claro">{{ idioma == 'pt' ? 'Computação Forense' : 'Forensic Computing' }}</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
         <div class="progress-bar bg-progresso" data-progress="60"></div>
       </div>
       <br />
-      <p class="texto-claro">Nmap</p>
+      <p class="texto-claro">Wireshark</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
-        <div class="progress-bar bg-progresso" data-progress="40"></div>
+        <div class="progress-bar bg-progresso" data-progress="50"></div>
       </div>
       <br />
-      <p class="texto-claro">Resposta a Incidentes</p>
+      <p class="texto-claro">{{ idioma == 'pt' ? 'Resposta a Incidentes' : 'Incident Response' }}</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
         <div class="progress-bar bg-progresso" data-progress="58"></div>
       </div>
@@ -54,7 +54,7 @@
         <div class="progress-bar bg-progresso" data-progress="58"></div>
       </div>
       <br />
-      <p class="texto-claro">Kibana</p>
+      <p class="texto-claro">Tcpdump</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
         <div class="progress-bar bg-progresso" data-progress="42"></div>
       </div>
@@ -62,12 +62,12 @@
     </div>
 
     <div class="col-12 col-md-4">
-      <p class="texto-claro">Liderança</p>
+      <p class="texto-claro">{{ idioma == 'pt' ? 'Liderança' : 'Leadership' }}</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
         <div class="progress-bar bg-progresso" data-progress="67"></div>
       </div>
       <br />
-      <p class="texto-claro">Oratória</p>
+      <p class="texto-claro">{{ idioma == 'pt' ? 'Oratória' : 'Public Speaking' }}</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
         <div class="progress-bar bg-progresso" data-progress="80"></div>
       </div>
@@ -82,7 +82,7 @@
         <div class="progress-bar bg-progresso" data-progress="80"></div>
       </div>
       <br />
-      <p class="texto-claro">Pensamento Analítico</p>
+      <p class="texto-claro">{{ idioma == 'pt' ? 'Pensamento Analítico' : 'Analytical Thinking' }}</p>
       <div class="progress" role="progressbar" aria-valuemax="100">
         <div class="progress-bar bg-progresso" data-progress="90"></div>
       </div>
@@ -94,11 +94,9 @@
   <br />
 
   <div class="row m-4">
-    <div class="col-12 col-md-6 text-end">
-      <button class="btn botao-curriculo my-3">Baixe meu currículo</button>
-    </div>
-    <div class="col-12 col-md-6">
-      <button class="btn botao-curriculo my-3">Baixe meu currículo tunado 😎</button>
+    <div class="col-12 d-flex justify-content-center flex-wrap gap-3">
+      <button class="btn botao-curriculo my-3" (click)="abrirCurriculo()">{{ idioma == 'pt' ? 'Baixe meu currículo' : 'Download my resume' }}</button>
+      <!--<button class="btn botao-curriculo my-3">{{ idioma == 'pt' ? 'Baixe meu currículo tunado 😎' : 'Download my cooler resume 😎' }}</button>-->
     </div>
   </div>
 </div>

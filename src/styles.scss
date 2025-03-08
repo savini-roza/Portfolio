@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Urbanist';
-  src: url('assets/fonts/Urbanist.ttf') format("truetype");
+  src: url('/Urbanist.ttf') format("truetype");
 }
 
 body {
@@ -21,7 +21,7 @@ h2{
 }
 
 .quadro-card {
-  background-image: url('./assets/image/bg-quadro.png');
+  background-image: url('/bg-quadro.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -1,7 +1,7 @@
 <div class="container pt-7" id="sobre-mim">
   <div class="row mb-5">
     <div class="col-12 text-center">
-      <h2 class="texto-claro">Sobre Mim</h2>
+      <h2 class="texto-claro">{{idioma == 'pt' ? 'Sobre Mim' : 'About Me'}}</h2>
     </div>
   </div>
   <div class="row">
@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="col-12 col-md-8">
-      <div class="quadro-card">
+      <div class="quadro-card" *ngIf="idioma == 'pt'">
         <p>
           Olá, sou a Savini, tenho 24 anos e sou apaixonada por tecnologia e cibersegurança. Comecei minha jornada em 2015, com um curso técnico de Informática para Internet na Etec de Votorantim, e me formei em Análise e Desenvolvimento de Sistemas pela Fatec de Sorocaba em 2024. Atualmente, curso uma pós-graduação em Segurança da Informação na Universidade São Judas Tadeu.
         </p>
@@ -23,6 +23,22 @@
         </p>
         <p>
           Nos momentos livres, eu adoro criar ilustrações digitais, jogar videogames e apreciar passarinhos.
+        </p>
+      </div>
+
+      <div class="quadro-card" *ngIf="idioma == 'en'">
+        <p>
+          Hi, I'm Savini, I'm 24 years old, and I'm passionate about technology and cybersecurity. I began my journey in 2015 with a technical course in Internet Informatics at Etec de Votorantim and graduated in Systems Analysis and Development from Fatec de Sorocaba in 2024. Currently, I am pursuing a postgraduate degree in Information Security at Universidade São Judas Tadeu.
+        </p>
+        <p>
+          My career started with an internship in 2018, evolving into a fullstack developer role with experience in C#, Angular, React, Python, and DevOps. Since 2023, I have been working at G&P.
+        </p>
+        <p>
+          I am a strong advocate for education and accessible technology for everyone, as I believe that knowledge transforms lives and opens doors to a more equal future. I have a special appreciation for initiatives that promote the empowerment of women in technology, helping them connect, learn, and claim their space in the IT field.
+          I love being part of this movement, mentoring in these initiatives and speaking about cybersecurity at events and universities.
+        </p>
+        <p>
+          In my free time, I enjoy creating digital illustrations, playing video games, and birdwatching.
         </p>
       </div>
     </div>

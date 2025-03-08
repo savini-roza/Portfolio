@@ -102,10 +102,17 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/ngx-extended-pdf-viewer/assets/pdf.sandbox-4.7.735.js",
+              "node_modules/ngx-extended-pdf-viewer/assets/pdf.worker-4.7.735.js",
+              "node_modules/ngx-extended-pdf-viewer/assets/viewer-4.7.735.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d03a895b-e523-4e5a-ae4e-ef9bbf644985"
   }
 }

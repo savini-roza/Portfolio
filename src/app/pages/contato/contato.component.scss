@@ -1,0 +1,37 @@
+.icone {
+    margin-right: 10px;
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+}
+
+.link-com-icone {
+    line-height: 2.5; /* Ajuste este valor conforme necessário */
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+  }
+
+a {
+    color: white;
+} 
+  
+.linkedin {
+    background-image: url('/linkedin.png');
+}
+
+.github {
+    background-image: url('/github.png');
+}
+
+.instagram {
+    background-image: url('/instagram.png');
+}
+
+.discord {
+    background-image: url('/discord.png');
+}
+
+.email {
+    background-image: url('/email.png');
+}

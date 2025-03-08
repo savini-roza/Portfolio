@@ -1,14 +1,23 @@
-import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { NgIf } from '@angular/common';
+import { Component, HostListener, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { NgxTypewriterComponent } from '@omnedia/ngx-typewriter';
 
 @Component({
   selector: 'app-inicio',
-  imports: [NgxTypewriterComponent],
+  imports: [NgxTypewriterComponent, NgIf],
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent {
+export class InicioComponent implements OnInit {
+  bandeira: string = '';
+  idioma: string = ''
+
   constructor() { }
+
+  ngOnInit(): void {
+    this.idioma = localStorage.getItem('idioma') || 'pt';
+    this.bandeira = localStorage.getItem('idioma') == 'pt' ? "/flag-uk.png" : "/flag-br.png";
+  }
 
   @ViewChild('menu')
   menu!: ElementRef;
@@ -16,7 +25,7 @@ export class InicioComponent {
   @ViewChild('inicio')
   inicio!: ElementRef;
 
-  words: string[] = [
+  palavras: string[] = [
     'Analista de Cibersegurança',
     'Desenvolvedora Web',
     'Emo',
@@ -26,6 +35,18 @@ export class InicioComponent {
     'Apreciadora de pássaros',
     'Artista',
     'Blue Teamer'
+  ];
+
+  words: string[] = [
+    "Cybersecurity Analyst",
+    "Web Developer",
+    "Emo",
+    "Software Engineer",
+    "Angelology Enthusiast",
+    "Speaker",
+    "Bird Enthusiast",
+    "Artist",
+    "Blue Teamer"
   ];
 
   @HostListener('window:scroll', [])
@@ -43,5 +64,15 @@ export class InicioComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  mudarIdioma() {
+    const idioma = localStorage.getItem('idioma');
+    if (idioma === 'pt') {
+      localStorage.setItem('idioma', 'en');
+    } else {
+      localStorage.setItem('idioma', 'pt');
+    }
+    window.location.reload();
   }
 }

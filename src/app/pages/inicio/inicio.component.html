@@ -7,30 +7,39 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link texto-claro" (click)="scrollToSection('inicio')">Início</a>
+            <a class="nav-link texto-claro" (click)="scrollToSection('inicio')">{{ idioma == 'pt' ? 'Início' : 'Home' }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link texto-claro" (click)="scrollToSection('sobre-mim')">Sobre Mim</a>
+            <a class="nav-link texto-claro" (click)="scrollToSection('sobre-mim')">{{ idioma == 'pt' ? 'Sobre Mim' : 'About Me' }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link texto-claro" (click)="scrollToSection('experiencias')">Skills</a>
+            <a class="nav-link texto-claro" (click)="scrollToSection('experiencias')">{{ idioma == 'pt' ? 'Skills' : 'Skills' }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link texto-claro" (click)="scrollToSection('contato')">Contato</a>
+            <a class="nav-link texto-claro" (click)="scrollToSection('contato')">{{ idioma == 'pt' ? 'Contato' : 'Contact' }}</a>
           </li>
         </ul>
       </div>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link texto-claro" (click)="mudarIdioma()"><img width="50%" style="cursor: pointer;" [src]="bandeira"></a>
+        </li>
+      </ul>
     </div>
   </nav>
 
   <div class="container" id="inicio">
     <div class="row padding-inicio">
       <div class="col-12 mt-5 texto-claro">
-        <h1 class="texto-destaque-1">
+        <h1 *ngIf="idioma == 'pt'" class="texto-destaque-1">
           Olá!<br />
           Eu sou Savini,
         </h1>
-        <om-typewriter class="texto-destaque-2" [words]="words" [writeSpeed]="30" [deleteDelay]="2500"></om-typewriter>
+        <h1  *ngIf="idioma == 'en'" class="texto-destaque-1">
+          Hello!<br /> 
+          I am Savini,
+        </h1>
+        <om-typewriter class="texto-destaque-2" [words]="idioma == 'pt' ? palavras : words" [writeSpeed]="30" [deleteDelay]="2500"></om-typewriter>
       </div>
     </div>
   </div>
