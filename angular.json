@@ -108,6 +108,9 @@
               "node_modules/ngx-extended-pdf-viewer/assets/viewer-4.7.735.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
