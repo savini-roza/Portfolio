@@ -5,7 +5,7 @@ import { ErroComponent } from './pages/erro/erro.component';
 
 export const routes: Routes = [
     { path: '', component: LayoutComponent, pathMatch: 'full' },
-    { path: 'resume', component: CurriculoComponent, pathMatch: 'full' },
+    { path: '/resume', component: CurriculoComponent, pathMatch: 'full' },
     { path: '**', component: ErroComponent }
 
 ];

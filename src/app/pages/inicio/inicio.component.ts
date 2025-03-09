@@ -16,7 +16,7 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
     this.idioma = localStorage.getItem('idioma') || 'pt';
-    this.bandeira = localStorage.getItem('idioma') == 'pt' ? "/flag-uk.png" : "/flag-br.png";
+    this.bandeira = localStorage.getItem('idioma') == 'pt' ? "flag-uk.png" : "flag-br.png";
   }
 
   @ViewChild('menu')
