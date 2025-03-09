@@ -41,7 +41,7 @@ export class ExperienciasComponent implements AfterViewInit {
 
   abrirCurriculo() {
     const url = this.router.serializeUrl(
-      this.router.createUrlTree([`/Portfolio/resume`])
+      this.router.createUrlTree([`/resume`])
     );
   
     window.open(url, '_blank');
